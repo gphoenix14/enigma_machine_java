@@ -99,12 +99,12 @@ public class EnigmaSimulator {
     
         // Crea un'istanza di EnigmaSimulator
         EnigmaSimulator enigma = new EnigmaSimulator();
-        // Ottiene il messaggio e la modalità (cifratura o decifratura) dagli argomenti passati da riga di comando
+        // Ottiene il messaggio e la modalita (cifratura o decifratura) dagli argomenti passati da riga di comando
         String messaggio = args[0];
-        boolean modalità = "1".equals(args[1]);
+        boolean modalita = "1".equals(args[1]);
 
         // Esegue la cifratura o decifratura del messaggio e stampa il risultato
-        String risultato = enigma.cifraDecifra(messaggio, modalità);
+        String risultato = enigma.cifraDecifra(messaggio, modalita);
         System.out.println("Risultato: " + risultato);
     }
 }
